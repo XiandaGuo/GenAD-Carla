@@ -1,4 +1,4 @@
-# Bench2Drive-GenAD
+# GenAD—Carla
 ## 概要
 Bench2Drive包含进行闭环评测的[Bench2Drive](https://github.com/Thinklab-SJTU/Bench2Drive)这个仓库以及模型的仓库[Bench2DriveZoo](https://github.com/Thinklab-SJTU/Bench2DriveZoo/tree/uniad/vad)
 ，本仓库代码在Bench2DriveZoo仓库中集成了GenAD，绝大部分代码与Bench2DriveZoo相同
