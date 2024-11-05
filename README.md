@@ -1,26 +1,10 @@
-# GenAD: Generative End-to-End Autonomous Driving
-
-### [Paper](https://arxiv.org/pdf/2402.11502)
-
-> GenAD: Generative End-to-End Autonomous Driving
-
-> [Wenzhao Zheng](https://wzzheng.net/)\*, [Ruiqi Song](https://scholar.google.com.hk/citations?user=hMSOTPoAAAAJ&hl=zh-CN)\*, [Xianda Guo](https://scholar.google.com/citations?user=jPvOqgYAAAAJ)\* $\dagger$, Chenming Zhang, [Long Chen](https://scholar.google.com/citations?user=jzvXnkcAAAAJ) $\dagger$
-
-\* Equal contributions $\dagger$ Corresponding authors
-
-**GenAD casts autonomous driving as a generative modeling problem.**
-
 ## News 
 
-- **[2024/11/10]**  Closed-loop evaluation code has been released.
+- **[2024/11/10]** Closed-loop code for [GenAD](https://github.com/wzzheng/GenAD) has been released.
 
 ## Demo
 
 ![vis](./assets/carla.png)
-
-## Overview
-
-![framework](./assets/framework.png)
 
 **Comparisons of the proposed generative end-to-end autonomous driving framework with the conventional pipeline.** Bench2Drive comprises the [Bench2Drive](https://github.com/Thinklab-SJTU/Bench2Drive) repository for closed-loop evaluation and the model repository [Bench2DriveZoo](https://github.com/Thinklab-SJTU/Bench2DriveZoo/tree/uniad/vad). The code in this repository integrates GenAD within the Bench2DriveZoo repository, with the majority of the code being identical to that in Bench2DriveZoo. This repository does not contain the code from the Bench2Drive repository, and no modifications were made to the closed-loop evaluation code. Only the execution scripts were adjusted, as detailed in the following description.
 
