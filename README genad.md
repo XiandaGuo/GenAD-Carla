@@ -16,7 +16,7 @@
 
 ## Demo
 
-![vis](./assets/varla.png)
+![vis](./assets/carla.png)
 
 ## Overview
 
