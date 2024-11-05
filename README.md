@@ -8,9 +8,7 @@
 
 **Comparisons of the proposed generative end-to-end autonomous driving framework with the conventional pipeline.** Bench2Drive comprises the [Bench2Drive](https://github.com/Thinklab-SJTU/Bench2Drive) repository for closed-loop evaluation and the model repository [Bench2DriveZoo](https://github.com/Thinklab-SJTU/Bench2DriveZoo/tree/uniad/vad). The code in this repository integrates GenAD within the Bench2DriveZoo repository, with the majority of the code being identical to that in Bench2DriveZoo. This repository does not contain the code from the Bench2Drive repository, and no modifications were made to the closed-loop evaluation code. Only the execution scripts were adjusted, as detailed in the following description.
 
-## Evaluation Results
-
-### Evaluation Results
+## Results
 
 |       Method        | Driving Score | Success Rates (%) |
 | :-----------------: | :-----------: | :---------------: |
@@ -19,16 +17,15 @@
 | VAD (Reproduction)  |     38.16     |       0.15        |
 |      **GenAD**      |   **44.81**   |     **0.159**     |
 
-## Code 
-### installation
+## Getting Started
+### 0.installation
 
 Clone this repository and configure it according to the *Getting Started* section in the [Bench2DriveZoo](https://github.com/Thinklab-SJTU/Bench2DriveZoo/tree/uniad/vad) repository documentation. Refer to the configuration documentation in the [Bench2Drive](https://github.com/Thinklab-SJTU/Bench2Drive)  repository to link this repository to the closed-loop evaluation repository.
 
 Detailed package versions can be found in [requirements.txt](../requirements.txt).
 
-### Getting Started
 
-#### Model Training
+### 1.Training
 
 ``` 
 sh ./adzoo/genad/dist_train.sh ./adzoo/genad/configs/VAD/GenAD_config_b2d.py 1
@@ -36,13 +33,13 @@ sh ./adzoo/genad/dist_train.sh ./adzoo/genad/configs/VAD/GenAD_config_b2d.py 1
 
 **Note:** Detailed training and evaluation methods can be found in the documentation of [Bench2DriveZoo](https://github.com/Thinklab-SJTU/Bench2DriveZoo/tree/uniad/vad).
 
-#### Open-Loop Evaluation
+### 2.Open-Loop Evaluation
 
 ```
 sh ./adzoo/genad/dist_test.sh ./adzoo/genad/configs/VAD/GenAD_config_b2d.py ./work_dirs/GenAD_config_b2d/epoch_.pth 1
 ```
 
-#### Closed-Loop Evaluation
+### 3.Closed-Loop Evaluation
 
 Eval GenAD with 8 GPUs
 
@@ -57,6 +54,12 @@ leaderboard/scripts/run_evaluation_debug.sh
 ```
 
 **Note:** Detailed training and evaluation methods can be found in the documentation of [Bench2DriveZoo](https://github.com/Thinklab-SJTU/Bench2DriveZoo/tree/uniad/vad).
+
+## Acknowledgement
+[VAD](https://github.com/hustvl/VAD),
+[UniAD](https://github.com/OpenDriveLab/UniAD),
+[GenAD](https://github.com/wzzheng/GenAD),
+[Bench2DriveZoo](https://github.com/Thinklab-SJTU/Bench2DriveZoo)
 
 ## Citation
 
